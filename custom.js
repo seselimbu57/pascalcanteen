@@ -24,3 +24,20 @@ menuTabs[0].addEventListener("click", function(e)
          menuSelection.querySelector(target).classList.add("active");
      }
 }, false);
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:0
+        },
+        1000:{
+            items:0
+        }
+    }
+})

@@ -6,11 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&family=Festive&family=Merriweather:wght@300&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="assests/style.css">
-</head>
+    <script src="https://kit.fontawesome.com/880c95e437.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&family=Festive&family=Libre+Baskerville&family=Merriweather:wght@900&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <body>
     <!-- navigation section starts -->
@@ -32,10 +39,15 @@
                         </ul>
                     </div>
 
-                    <div class="hamburger">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
+                    <div class="left-nav-menu">
+                        <div class="account">
+                            <p><a href="registration.html" target="_blank">Login/Register</a></p>
+                        </div>
+                        <div class="hamburger">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
                     </div>
                 </div>
         </section>
@@ -43,41 +55,47 @@
         <section class=" glass heropage" id="hero-section">
             <div class="landing">
                 <div class="left">
-                    <h1>It's not just a food,<br> It's an experience</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo consequatur autem deserunt odio
-                        alias?
-                        Beatae, accusamus vero? Provident, quos nam!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, odit.
-                    </p>
+                    <h1>It's not just a food,It's an experience</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, facilis! Neque, ab eligendi,
+                        incidunt dicta omnis itaque reiciendis tempore nisi similique nemo, voluptatibus placeat iure
+                        id? Pariatur rem, soluta laborum doloremque quis incidunt deleniti tempore quos dignissimos,
+                        eius eaque sint fuga at, harum maiores quo?</p>
                     <div class="button">
                         <a href="#" class="menubutton">View Menu</a>
                         <a href="#" class="menubutton">Order Now</a>
                     </div>
                 </div>
 
+                <div class="owl-carousel owl-theme ">
+                    <div class="item"><img src="/assests/images/chowmain.png" alt=""></div>
+                    <!-- <div class="owl-item"><img src="/assests/images/newfood.png" alt=""></div>
+                    <div class="owl-item"><img src="/assests/images/newfood2.png" alt=""></div>
+                    <div class="owl-item"><img src="/assests/images/burger.png" alt=""></div>
+                    <div class="owl-item"><img src="/assests/images/chowmain.png" alt=""></div> -->
+                </div>
+            </div>
+            <div class="owl-carousel">
                 <div class="right">
-                    <img src="/assests/images/chowmein 1.png" alt="chowmenin">
+                    <div class="right-outer">
+                        <div class="right-inner">
+                            <img src="/assests/images/softdrinks.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="right-outer">
+                        <div class="right-inner">
+                            <img src="/assests/images/food.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="right-outer">
+                        <div class="right-inner">
+                            <img src="/assests/images/newfood2.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="col1">
-                    <a href=""><img src="/assests/images/chowmein 1.png" alt=""></a>
-                </div>
-
-                <div class="col1">
-                    <a href="">
-                        <img src="/assests/images/chowmein 1.png" alt=""></a>
-                </div>
-
-                <div class="col1">
-                    <a href=""><img src="/assests/images/chowmein 1.png" alt=""></a>
-                </div>
-
-                <div class="col1">
-                    <a href=""><img src="/assests/images/chowmein 1.png" alt=""></a>
-                </div>
-            </div>
         </section>
 
         <!--  offer section starts-->
@@ -128,113 +146,191 @@
         <section class=" glass menu" id="menusection">
             <div class="menu-section">
                 <div class="container menu-selection">
-                    <!-- <div class="row"> -->
                     <div class="section-title">
                         <h1>Menu's Category</h1>
                         <p>Today's Menu</p>
                     </div>
-                    <div class="row">
-                        <div class="menu-tabs">
-                            <button type="button" class="menu-tab-item active"
-                                data-target="#breakfast">Breakfast</button>
-                            <button type="button" class="menu-tab-item" data-target="#tea">Tea</button>
-                            <button type="button" class="menu-tab-item" data-target="#drinks">Drinks</button>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="menu-tabs">
+                        <button type="button" class="menu-tab-item active" data-target="#breakfast">Breakfast</button>
+                        <button type="button" class="menu-tab-item" data-target="#tea">Tea</button>
+                        <button type="button" class="menu-tab-item" data-target="#drinks">Drinks</button>
                     </div>
+                </div>
 
-                    <div class="row menu-tab-content menu-tab-content-flex active" id="breakfast">
-                        <div class="menu-item">
-                            <div class="menu-item-title" id="our-menu">
-                                <img src="/assests/images/chowmein 1.png" alt="">
-                                <div>
-                                    <h4>Chow-Mein</h4>
+                <div class="row menu-tab-content menu-tab-content-grid menu-tab-content-flex active" id="breakfast">
+                    <div class="menu-item">
+                        <div class="menu-item-img" id="our-menu">
+                            <img src="/assests/images/samosa.png" alt="">
+                        </div>
+                        <div class="menu-items-descriptions">
+                            <div class="menu-item-name">
+                                <h4>Samosa</h4>
+                            </div>
+                            <div class="menu-item-description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam natus
+                                    molestiae dignissimos a facere ducimus exercitationem commodi!</p>
+                            </div>
+                            <div class="menu-items-flex">
+                                <div class="price">
+                                    <h4>RS.80/-</h4>
+                                </div>
+                                <div class="button-container">
+                                    <div class="card-button">
+                                        <p>Order Now</p>
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="menu-item-price menu-item-all">
-                                <h4>Rs.100</h4>
-                                <a href="">Order Now</a>
-                            </div>
                         </div>
+                    </div>
 
-                        <div class="menu-item">
-                            <div class="menu-item-title">
-                                <img src="/assests/images/chowmein 1.png" alt="">
-                                <h4>Chow-Mein</h4>
-                            </div>
-                            <div class="menu-item-price">
-                                Rs.100/-
-                            </div>
+                    <div class="menu-item">
+                        <div class="menu-item-img" id="our-menu">
+                            <img src="/assests/images/chowmein.png" alt="">
                         </div>
-
-                        <div class="menu-item">
-                            <div class="menu-item-title">
-                                <img src="/assests/images/chowmein 1.png" alt="">
-                                <h4>Chow-Mein</h4>
+                        <div class="menu-items-descriptions">
+                            <div class="menu-item-name">
+                                <h4>chowmein</h4>
                             </div>
-                            <div class="menu-item-price">
-                                Rs.100/-
+                            <div class="menu-item-description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam natus
+                                    molestiae dignissimos a facere ducimus exercitationem commodi!</p>
                             </div>
-                        </div>
-
-                        <div class="menu-item">
-                            <div class="menu-item-title">
-                                <img src="/assests/images/chowmein 1.png" alt="">
-                                <h4>Chow-Mein</h4>
-                            </div>
-                            <div class="menu-item-price">
-                                Rs.100/-
-                            </div>
-                        </div>
-
-                        <div class="menu-item">
-                            <div class="menu-item-title">
-                                <img src="/assests/images/chowmein 1.png" alt="">
-                                <h4>Chow-Mein</h4>
-                            </div>
-                            <div class="menu-item-price">
-                                Rs.100/-
+                            <div class="menu-items-flex">
+                                <div class="price">
+                                    <h4>RS.120/-</h4>
+                                </div>
+                                <div class="button-container">
+                                    <div class="card-button">
+                                        <p>Order Now</p>
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row menu-tab-content menu-tab-content-flex" id="tea">
-                        <div class="menu-item">
-                            <div class="menu-item-title">
-                                <img src="/assests/images/chowmein 1.png" alt="">
-                                <h4>Chow-Mein</h4>
-                            </div>
-                            <div class="menu-item-price">
-                                Rs.50/-
-                            </div>
-                        </div>
 
-                        <div class="menu-item">
-                            <div class="menu-item-title">
-                                <img src="/assests/images/chowmein 1.png" alt="">
-                                <h4>Chow-Mein</h4>
+                    <div class="menu-item">
+                        <div class="menu-item-img" id="our-menu">
+                            <img src="/assests/images/momo.png" alt="">
+                        </div>
+                        <div class="menu-items-descriptions">
+                            <div class="menu-item-name">
+                                <h4>Momo</h4>
                             </div>
-                            <div class="menu-item-price">
-                                Rs.50/-
+                            <div class="menu-item-description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam natus
+                                    molestiae dignissimos a facere ducimus exercitationem commodi!</p>
+                            </div>
+                            <div class="menu-items-flex">
+                                <div class="price">
+                                    <h4>RS.90/-</h4>
+                                </div>
+                                <div class="button-container">
+                                    <div class="card-button">
+                                        <p>Order Now</p>
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row menu-tab-content menu-tab-content-flex" id="drinks">
-                        <div class="menu-item">
-                            <div class="menu-item-title">
-                                <img src="/assests/images/chowmein 1.png" alt="">
-                                <h4>Chow-Mein</h4>
+
+                    <div class="menu-item">
+                        <div class="menu-item-img" id="our-menu">
+                            <img src="/assests/images/chanaegg.png" alt="">
+                        </div>
+                        <div class="menu-items-descriptions">
+                            <div class="menu-item-name">
+                                <h4>Chana-egg</h4>
                             </div>
-                            <div class="menu-item-price">
-                                Rs.10/-
+                            <div class="menu-item-description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam natus
+                                    molestiae dignissimos a facere ducimus exercitationem commodi!</p>
+                            </div>
+                            <div class="menu-items-flex">
+                                <div class="price">
+                                    <h4>RS.130/-</h4>
+                                </div>
+                                <div class="button-container">
+                                    <div class="card-button">
+                                        <p>Order Now</p>
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <!-- </div> -->
 
-                        <div class="menu-item">
-                            <div class="menu-item-title">
-                                <img src="/assests/images/chowmein 1.png" alt="">
-                                <h4>Chow-Mein</h4>
+                <div class="row menu-tab-content menu-tab-content-grid menu-tab-content-flex" id="tea">
+                    <div class="menu-item">
+                        <div class="menu-item-img" id="our-menu">
+                            <img src="/assests/images/tea.png" alt="">
+                        </div>
+                        <div class="menu-items-descriptions">
+                            <div class="menu-item-name">
+                                <h4>tea</h4>
                             </div>
-                            <div class="menu-item-price">
-                                Rs.100/-
+                            <div class="menu-item-description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam
+                                    natus
+                                    molestiae dignissimos a facere ducimus exercitationem commodi!</p>
+                            </div>
+                            <div class="menu-items-flex">
+                                <div class="price">
+                                    <h4>RS.30/-</h4>
+                                </div>
+                                <div class="button-container">
+                                    <div class="card-button">
+                                        <p>Order Now</p>
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row menu-tab-content  menu-tab-content-grid menu-tab-content-flex" id="drinks">
+                    <div class="menu-item">
+                        <div class="menu-item-img" id="our-menu">
+                            <img src="/assests/images/softdrinks.png" alt="">
+                        </div>
+                        <div class="menu-items-descriptions">
+                            <div class="menu-item-name">
+                                <h4>tea</h4>
+                            </div>
+                            <div class="menu-item-description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam
+                                    natus
+                                    molestiae dignissimos a facere ducimus exercitationem commodi!</p>
+                            </div>
+                            <div class="menu-items-flex">
+                                <div class="price">
+                                    <h4>RS.70/-</h4>
+                                </div>
+                                <div class="button-container">
+                                    <div class="card-button">
+                                        <p>Order Now</p>
+                                        <div class="card-icon">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -322,22 +418,22 @@
                     <div class="footer-items">
                         <h4>Quick Links</h4>
                         <ul>
-                            <a href="">
+                            <a href="#">
                                 <li>Home</li>
                             </a>
-                            <a href="">
+                            <a href="#">
                                 <li>Menu</li>
                             </a>
-                            <a href="">
+                            <a href="#">
                                 <li>About-Us</li>
                             </a>
-                            <a href="">
+                            <a href="#">
                                 <li>Contact-Us</li>
                             </a>
                         </ul>
                     </div>
                     <div class="footer-items">
-                        <h4>Contact-Info</h4>
+                        <h4 class="sub_h4">Contact-Info</h4>
                         <div class="footer-items-info">
                             <img src="/assests/images/location.png" alt="">
                             <p>Near swimmingPool,Satdobato</p>
@@ -362,6 +458,12 @@
         </footer>
     </section>
     <script src="/assests/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
